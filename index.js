@@ -13,6 +13,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
 const databaseURI = process.env.DATABASE_URI;
+console.log(databaseURI);
 
 mongoose
   .connect(databaseURI)
